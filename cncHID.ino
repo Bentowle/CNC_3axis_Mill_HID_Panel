@@ -13,7 +13,10 @@ const int X_PLUS = 11; // KEY_RIGHT_ARROW
 const int X_MINUS = 12; // KEY_LEFT_ARROW
 const int Z_PLUS = 13; // KEY_PAGE_UP
 const int Z_MINUS = 14; // KEY_PAGE_DOWN
-
+const int FEED_PLUS = 15; // '>'
+const int FEED_MINUS = 16; // '<'
+const int SPINDLE_PLUS = 17; // KEY_F12
+const int SPINDLE_MINUS = 18; // KEY_F11
 
 void setup() {
   pinMode(MAN, INPUT_PULLUP);
@@ -29,6 +32,10 @@ void setup() {
   pinMode(X_MINUS, INPUT_PULLUP);
   pinMode(Z_PLUS, INPUT_PULLUP);
   pinMode(Z_MINUS, INPUT_PULLUP);
+  pinMode(FEED_PLUS, INPUT_PULLUP);
+  pinMode(FEED_MINUS, INPUT_PULLUP);
+  pinMode(SPINDLE_PLUS, INPUT_PULLUP);
+  pinMode(SPINDLE_MINUS, INPUT_PULLUP);
  
   Keyboard.begin();
 }
@@ -45,7 +52,7 @@ void loop() {
   }
 
   if (digitalRead(AUTO) == LOW) {
-    // AUTO Keyboard.press(ctrlKey);button is pressed
+    // AUTO button is pressed
     // Perform action for AUTO button
     // KEY_F4
     Keyboard.press(KEY_F4);
@@ -94,11 +101,53 @@ void loop() {
     delay(1000);
   }
 
+  if (digitalRead(SPINDLE_PLUS) == LOW) {
+    // SPINDLE_PLUS button is pressed
+    // Perform action for SPINDLE_PLUS button
+    // KEY_F12
+    Keyboard.press(KEY_F12);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(1000);
+  }
+  
+
+  if (digitalRead(SPINDLE_MINUS) == LOW) {
+    // SPINDLE_MINUS button is pressed
+    // Perform action for SPINDLE_MINUS button
+    // KEY_F11
+    Keyboard.press(KEY_F11);
+    delay(100);
+    Keyboard.releaseAll();
+    delay(1000);
+  }
+
+
   if (digitalRead(RESUME) == LOW) {
     // RESUME button is pressed
     // Perform action for RESUME button
     // 's'
     Keyboard.press('s');
+    delay(100);
+    Keyboard.releaseAll();
+    delay(1000);
+  }
+
+  if (digitalRead(FEED_MINUS) == LOW) {
+    // FEED_MINUS button is pressed
+    // Perform action for FEED_MINUS button
+    // '<'
+    Keyboard.press('<');
+    delay(100);
+    Keyboard.releaseAll();
+    delay(1000);
+  }
+
+  if (digitalRead(FEED_PLUS) == LOW) {
+    // FEED_PLUS button is pressed
+    // Perform action for FEED_PLUS button
+    // '>'
+    Keyboard.press('>');
     delay(100);
     Keyboard.releaseAll();
     delay(1000);
