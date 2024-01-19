@@ -48,7 +48,7 @@ void loop() {
     Keyboard.press(KEY_F3);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(AUTO) == LOW) {
@@ -58,7 +58,7 @@ void loop() {
     Keyboard.press(KEY_F4);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
   
   if (digitalRead(MDI) == LOW) {
@@ -68,7 +68,7 @@ void loop() {
     Keyboard.press(KEY_F5);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(DUST) == LOW) {
@@ -78,7 +78,7 @@ void loop() {
     Keyboard.press(KEY_F8);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(RUN) == LOW) {
@@ -88,7 +88,7 @@ void loop() {
     Keyboard.press('r');
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
   
   if (digitalRead(PAUSE) == LOW) {
@@ -98,7 +98,7 @@ void loop() {
     Keyboard.press('p');
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(SPINDLE_PLUS) == LOW) {
@@ -108,7 +108,7 @@ void loop() {
     Keyboard.press(KEY_F12);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
   
 
@@ -119,7 +119,7 @@ void loop() {
     Keyboard.press(KEY_F11);
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
 
@@ -130,7 +130,7 @@ void loop() {
     Keyboard.press('s');
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(FEED_MINUS) == LOW) {
@@ -140,7 +140,7 @@ void loop() {
     Keyboard.press('<');
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(FEED_PLUS) == LOW) {
@@ -150,7 +150,7 @@ void loop() {
     Keyboard.press('>');
     delay(100);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(Y_PLUS) == LOW) {
@@ -158,9 +158,9 @@ void loop() {
     // Perform action for Y+ button
     // KEY_UP_ARROW
     Keyboard.press(KEY_UP_ARROW);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(Y_MINUS) == LOW) {
@@ -168,9 +168,9 @@ void loop() {
     // Perform action for Y- button
     // KEY_DOWN_ARROW
     Keyboard.press(KEY_DOWN_ARROW);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(X_PLUS) == LOW) {
@@ -178,9 +178,9 @@ void loop() {
     // Perform action for X+ button
     // KEY_RIGHT_ARROW
     Keyboard.press(KEY_RIGHT_ARROW);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(X_MINUS) == LOW) {
@@ -188,9 +188,9 @@ void loop() {
     // Perform action for X- button
     // KEY_LEFT_ARROW
     Keyboard.press(KEY_LEFT_ARROW);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(Z_PLUS) == LOW) {
@@ -198,9 +198,9 @@ void loop() {
     // Perform action for Z+ button
     // KEY_UP_ARROW
     Keyboard.press(KEY_PAGE_UP);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 
   if (digitalRead(Z_MINUS) == LOW) {
@@ -208,8 +208,8 @@ void loop() {
     // Perform action for Z- button
     // KEY_DOWN_ARROW
     Keyboard.press(KEY_PAGE_DOWN);
-    delay(100);
+    delay(50);
     Keyboard.releaseAll();
-    delay(1000);
+    //delay(1000);
   }
 }
